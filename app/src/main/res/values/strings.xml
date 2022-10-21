@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Busca CEP e endereço</string>
+    <string name="cep">CEP:</string>
+    <string name="rua">Logradouro:</string>
+    <string name="numero">Número:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="cidade">Cidade:</string>
+    <string name="estado">Estado:</string>
+    <string name="nullo">########</string>
+    <string name="consulte">Digite o CEP!</string>
+    <string name="clique_Aqui">Não sabe o CEP? clique</string>
+    <string name="aqui">AQUI!</string>
+    <string name="ou">Ou</string>
+    <string name="btn">Pesquisar</string>
+    <string name="complemento">Complemento</string>
+    <string name="sem_informacao">Não informado</string>
+
+    <string-array name="uf">
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SP</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+</resources>
