@@ -76,7 +76,9 @@ class Resultado : AppCompatActivity() {
 
         if (cepEditText != null) {
 
+
             viewModel.getEndereco(cepEditText!!)
+
 
             viewModel.errorEndereco.observe(this, Observer { error ->
 
@@ -105,7 +107,7 @@ class Resultado : AppCompatActivity() {
 
             viewModel.errorCep.observe(this, Observer { error ->
 
-                if (error != "error"){
+                if (error != "error") {
 
                     viewModel.cep.observe(this, Observer {
 
@@ -115,7 +117,7 @@ class Resultado : AppCompatActivity() {
 
                     })
 
-                }else {
+                } else {
 
                     onBackPressed()
 

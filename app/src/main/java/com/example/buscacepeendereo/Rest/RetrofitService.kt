@@ -10,7 +10,7 @@ import retrofit2.http.Path
 interface RetrofitService {
 
     @GET("ws/{cep}/json/")
-    fun getEndereco(@Path("cep", encoded = true) cep : String) : Call<Cep>
+    fun getEndereco(@Path("cep") cep : String) : Call<Cep>
 
     @GET("/ws/{uf}/{cidade}/{logradouro}/json/")
     fun getCep(

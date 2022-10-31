@@ -161,8 +161,7 @@ class MainActivity : AppCompatActivity() {
 
         } else if (cepEditText != "") {
 
-            viewModel.getEndereco(cepBellow)
-
+            viewModel.getEndereco(cepEditText)
 
             viewModel.errorEndereco.observe(this, Observer { error ->
 
@@ -196,10 +195,18 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
-
         } else if (cidade != "" && logradouro != "") {
 
             buscarCep()
+
+        } else{
+
+            val snackbar = Snackbar.make(
+                binding.mainActivity,
+                "Preencha todos os campos corretamente!", Snackbar.LENGTH_SHORT
+            )
+            snackbar.setBackgroundTint(Color.RED)
+            snackbar.show()
 
         }
     }

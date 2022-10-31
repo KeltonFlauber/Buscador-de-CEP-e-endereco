@@ -30,10 +30,9 @@ class MainViewModel(private val repository: MainRepository): ViewModel() {
 
     val errorCep : MutableLiveData<String> = MutableLiveData()
 
-    fun getEndereco(cep: String){
+    fun getEndereco(cep: String) {
 
-        val response = repository.getEndereco(cep)
-        response.enqueue(object : Callback<Cep>{
+        repository.getEndereco(cep).enqueue(object : Callback<Cep>{
             override fun onResponse(call: Call<Cep>, response: Response<Cep>) {
 
                 if (response.isSuccessful){
